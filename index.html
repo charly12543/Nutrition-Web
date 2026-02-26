@@ -32,13 +32,13 @@
 
 <!-- ================= HERO ================= -->
 <section class="hero" id="inicio">
-  <div class="container hero-content">
-    <h1>Nutrición inteligente para un físico real</h1>
-    <p>Planes personalizados, ciencia aplicada y resultados visibles.</p>
+  <div class="hero-content reveal">
+    <h1>Transforma tu físico con nutrición inteligente</h1>
+    <p>Planes personalizados, ciencia aplicada y resultados reales.</p>
 
     <div class="hero-buttons">
       <a href="#servicios" class="btn-primary">Ver servicios</a>
-      <a href="https://wa.me/52XXXXXXXXXX" class="btn-secondary">Agendar por WhatsApp</a>
+      <a href="https://wa.me/5210000000000" class="btn-secondary">Agendar por WhatsApp</a>
     </div>
   </div>
 </section>
@@ -46,25 +46,26 @@
 <!-- ================= SERVICIOS ================= -->
 <section class="section" id="servicios">
   <div class="container">
-    <h2 class="section-title">Servicios</h2>
+    <h2 class="section-title reveal">Servicios</h2>
 
     <div class="services">
-      <div class="card">
+
+      <div class="card reveal">
         <h3>Plan personalizado</h3>
-        <p>Dieta hecha a tu cuerpo, objetivos y estilo de vida.</p>
+        <p>Dieta adaptada a tu cuerpo, objetivos y estilo de vida.</p>
       </div>
 
-      <div class="card">
+      <div class="card reveal">
         <h3>Nutrición deportiva</h3>
-        <p>Optimiza rendimiento, fuerza y recuperación.</p>
+        <p>Mejora tu rendimiento, fuerza y recuperación muscular.</p>
       </div>
 
-      <div class="card">
+      <div class="card reveal">
         <h3>Asesoría online</h3>
-        <p>Seguimiento constante y ajustes en tiempo real.</p>
+        <p>Seguimiento constante con ajustes en tiempo real.</p>
       </div>
-    </div>
 
+    </div>
   </div>
 </section>
 
@@ -72,14 +73,14 @@
 <section class="section" id="sobre-mi">
   <div class="container about">
 
-    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b" alt="Nutriólogo">
+    <img class="reveal" src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b" alt="Nutriólogo">
 
-    <div>
+    <div class="reveal">
       <h2>Sobre mí</h2>
       <p>
         Soy nutriólogo especializado en recomposición corporal y rendimiento deportivo.
         He ayudado a decenas de personas a transformar su físico con estrategias
-        sostenibles y basadas en ciencia.
+        sostenibles basadas en ciencia.
       </p>
       <p>
         Mi enfoque combina nutrición inteligente, entrenamiento y mentalidad.
@@ -92,7 +93,7 @@
 <!-- ================= CTA FINAL ================= -->
 <section class="section">
   <div class="container">
-    <div class="cta" id="contacto">
+    <div class="cta reveal" id="contacto">
       <h2>¿Listo para tu transformación?</h2>
       <p>Agenda tu asesoría y comienza tu cambio hoy.</p>
       <a href="https://wa.me/5210000000000" class="btn">Escríbeme por WhatsApp</a>
@@ -104,6 +105,27 @@
 <footer class="footer">
   © 2026 NutriCoach | Desarrollado por Charly 💪🔥
 </footer>
+
+<!-- ================= BOTÓN FLOTANTE WHATSAPP ================= -->
+<a href="https://wa.me/5210000000000" class="wa-float" target="_blank">
+  💬
+</a>
+
+<!-- ================= ANIMACIONES SCROLL ================= -->
+<script>
+const reveals = document.querySelectorAll(".reveal");
+
+window.addEventListener("scroll", () => {
+  reveals.forEach(el => {
+    const windowHeight = window.innerHeight;
+    const elementTop = el.getBoundingClientRect().top;
+
+    if (elementTop < windowHeight - 80) {
+      el.classList.add("active");
+    }
+  });
+});
+</script>
 
 </body>
 </html>
