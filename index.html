@@ -13,6 +13,8 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -23,6 +25,14 @@
    <div class="logo">
   <img src="image/logo1.jpg" alt="Logo Nutriólogo Deportivo">
    </div>
+
+    <!-- HAMBURGUESA (MENÚ MÓVIL) -->
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    
     <div class="nav-links">
       <a href="#inicio">Inicio</a>
       <a href="#servicios">Servicios</a>
@@ -232,6 +242,37 @@ window.addEventListener("scroll", () => {
 });
 </script>
 
+   <!-- ================= NAVBAR MOVIL ================= -->
+<script>
+function toggleMenu(){
+  const navLinks = document.querySelector('.nav-links');
+  navLinks.classList.toggle('show');
+}
+</script>
+
+   <!-- ================= MENSAJE ================= -->
+  <script>
+window.addEventListener('load', function(){
+  setTimeout(() => {
+    alert("¡Hola! Esta página la hice con mucho cariño para ti, Nutriólogo y compañero de gym 💪❤️");
+  }, 500); // medio segundo después de cargar
+});
+</script>
+
+  <!-- ================= MENSAJE FLOTANTE ================= -->
+<script>
+window.addEventListener('load', function(){
+  Swal.fire({
+    title: '¡AMIGO!',
+    text: 'Esta página la hice con aprecio por el apoyo que me has brindado, AMIGO, NUTRI Y BRO de gym 💪❤️',
+    icon: 'success',
+    confirmButtonText: 'Entrar a la página'
+  });
+});
+</script>
+
+
+
   
   <!-- ================= PRUEBA O QUITAR ================= -->
 <script>
@@ -240,5 +281,10 @@ window.addEventListener("scroll", () => {
   nav.classList.toggle("scrolled", window.scrollY > 30);
 });
 </script>
+
+
+
+
+  
 </body>
 </html>
