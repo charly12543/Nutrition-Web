@@ -486,6 +486,15 @@ section{
   transform: scale(1.02);
 }
 
+/* ================= BOTONES VIDEO ================= */
+.video-buttons{
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
 .btn-video{
   display: inline-block;
   background: linear-gradient(135deg,#22c55e,#4ade80);
