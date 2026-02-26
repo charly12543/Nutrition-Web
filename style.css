@@ -71,13 +71,19 @@ p{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 0;
+  padding: 14px 0;
 }
 
-.logo{
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: #22c55e;
+.logo img{
+  height: 42px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  transition: .3s ease;
+}
+
+.logo img:hover{
+  transform: scale(1.05);
 }
 
 .nav-links a{
