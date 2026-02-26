@@ -529,6 +529,47 @@ section{
   height: 450px;
   border: 0;
 }
+
+/* ================= REDES SOCIALES ================= */
+.social-footer{
+  text-align: center;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn-social{
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  transition: .3s ease;
+}
+
+.btn-social.instagram{
+  background: #E1306C;
+}
+
+.btn-social.instagram:hover{
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(225,48,108,0.6);
+}
+
+.btn-social.facebook{
+  background: #1877F2;
+}
+
+.btn-social.facebook:hover{
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(24,119,242,0.6);
+}
+
+
+
 /* ===================================
    RESPONSIVE
 ===================================*/
