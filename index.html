@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="style.css">
 
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  
 </head>
 
 <body>
@@ -253,7 +254,22 @@ function toggleMenu(){
   <script>
 window.addEventListener('load', function(){
   setTimeout(() => {
-    alert("¡Hola Amigo! Esta página la hice con mucho cariño para ti, Nutriólogo y compañero de gym 💪❤️");
+    Swal.fire({
+      title: '¡Hola Amigo! 💪',
+      text: 'Esta página la hice con mucho aprecio para ti, Nutriólogo y compañero de gym ❤️',
+      icon: 'success',
+      confirmButtonText: 'Entrar a la página',
+      background: '#0f172a',
+      color: '#f8fafc',
+      confirmButtonColor: '#22c55e',
+      iconColor: '#22c55e',
+      showClass: {
+        popup: 'swal2-popup swal2-animate-enter'
+      },
+      hideClass: {
+        popup: 'swal2-popup swal2-animate-leave'
+      }
+    });
   }, 500); // medio segundo después de cargar
 });
 </script>
