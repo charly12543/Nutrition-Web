@@ -48,13 +48,11 @@
   <div class="hero-content reveal">
     <h1>Deja de intentar dietas y transforma tu físico de verdad</h1>
     <p>Nutrición deportiva personalizada para perder grasa, ganar músculo y lograr un cuerpo que sí se mantenga.</p>
+     <p style="margin-top:10px; font-size:.9rem; opacity:.8;">📍 Atención presencial en Zacatepec y online en todo México</p>
 
     <div class="hero-buttons">
       <a href="#servicios" class="btn-primary">Ver servicios</a>
-      <a href="https://wa.me/527345246507" class="btn-secondary">Quiero mi transformación</a>
-      <p style="margin-top:10px; font-size:.9rem; opacity:.8;">
-📍 Atención presencial en Zacatepec y online en todo México
-    </p>
+      <a href="https://wa.me/527345246507?text=Hola%20quiero%20información%20sobre%20el%20plan%20de%20transformación%20corporal" class="btn-secondary">Quiero mi transformación</a>
     </div>
   </div>
 </section>
@@ -122,7 +120,7 @@
 
       <div class="video-buttons reveal">
       <a href="https://www.instagram.com/nutricion.fitnessmx?igsh=Y21mczdjam5tbGVv" target="_blank" class="btn-video">📹 Ver video completo</a>
-     <a href="https://wa.me/527345246507" target="_blank" class="btn-video">💬 Agendar con él</a>
+     <a href="https://wa.me/527345246507?text=Hola%20quiero%20información%20sobre%20el%20plan%20de%20transformación%20corporal" target="_blank" class="btn-video">💬 Agendar con él</a>
      </div>
     </div>
   </div>
@@ -211,7 +209,7 @@ Más que un plan de alimentación, ofrezco un acompañamiento estratégico enfoc
    <div class="cta reveal" id="contacto">
   <h2>¿Listo para tu transformación definitiva?</h2>
   <p>Agenda tu plan personalizado y empieza tu cambio hoy mismo.</p>
-  <a href="https://wa.me/527345246507" class="btn-cta">💪 Quiero mi plan</a>
+  <a href="https://wa.me/527345246507?text=Hola%20quiero%20información%20sobre%20el%20plan%20de%20transformación%20corporal" class="btn-cta">💪 Quiero mi plan</a>
 </div>
 </div>    
 </section>
@@ -246,7 +244,10 @@ Más que un plan de alimentación, ofrezco un acompañamiento estratégico enfoc
   <span class="dev">Sitio desarrollado con 💻 por Charly</span>
 </footer>
 <!-- ================= BOTÓN FLOTANTE WHATSAPP ================= -->
-<a href="https://wa.me/527345246507" class="wa-float" target="_blank">
+<a href="https://wa.me/527345246507?text=Hola%20quiero%20información%20sobre%20el%20plan%20de%20transformación%20corporal" 
+   class="wa-float" 
+   target="_blank"
+   aria-label="Enviar mensaje por WhatsApp">
   💬
 </a>
 
@@ -272,6 +273,15 @@ function toggleMenu(){
   const navLinks = document.querySelector('.nav-links');
   navLinks.classList.toggle('show');
 }
+</script>
+
+ <!-- ================= NAVBAR BURGUER ================= -->
+  <script>
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    document.querySelector('.nav-links').classList.remove('show');
+  });
+});
 </script>
 
    <!-- ================= MENSAJE ================= -->
