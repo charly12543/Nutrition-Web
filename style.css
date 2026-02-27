@@ -600,6 +600,37 @@ section{
   .nav-links.show{
     display: flex;
   }
+
+
+.credenciales{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin:15px 0 10px;
+}
+
+.credenciales span{
+  background:rgba(34,197,94,0.15);
+  color:#22c55e;
+  padding:6px 12px;
+  border-radius:20px;
+  font-size:.85rem;
+}
+
+.social-proof{
+  text-align:center;
+  opacity:.8;
+  font-size:.9rem;
+  margin-top:-20px;
+  margin-bottom:30px;
+}
+
+.dev{
+  font-size:.75rem;
+  opacity:.6;
+}
+
+   
 }
 
 
