@@ -21,7 +21,7 @@ nav{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:20px 10%;
+  padding:14px 8%;
   position:fixed;
   width:100%;
   top:0;
@@ -30,22 +30,19 @@ nav{
   z-index:1000;
 }
 
+/* ✅ FIX LOGO (estable) */
 .logo{
-  font-weight:bold;
-  font-size:1.3rem;
-  color:#22c55e;
   display:flex;
   align-items:center;
 }
 
-/* FIX: tamaño correcto del logo */
 .logo img{
-  height:50px;
+  height:48px;
   width:auto;
-  display:block;
   object-fit:contain;
 }
 
+/* links */
 .nav-links{
   display:flex;
   gap:20px;
@@ -62,6 +59,7 @@ nav{
   color:#22c55e;
 }
 
+/* hamburguesa */
 .hamburger{
   display:none;
   flex-direction:column;
@@ -135,7 +133,7 @@ nav{
 }
 
 /* ===================================
-   CREDENCIALES PROFESIONALES
+   CREDENCIALES
 ===================================*/
 .credenciales{
   display:flex;
@@ -153,7 +151,7 @@ nav{
 }
 
 /* ===================================
-   SECCIONES GENERALES
+   SECCIONES
 ===================================*/
 section{
   padding:100px 10%;
@@ -198,7 +196,7 @@ section h2{
 }
 
 /* ===================================
-   PRUEBA SOCIAL
+   SOCIAL PROOF
 ===================================*/
 .social-proof{
   text-align:center;
@@ -206,13 +204,6 @@ section h2{
   font-size:.9rem;
   margin-top:-20px;
   margin-bottom:30px;
-}
-
-/* ===================================
-   CONTACTO
-===================================*/
-.contact{
-  text-align:center;
 }
 
 /* ===================================
@@ -263,8 +254,8 @@ footer{
     display:flex;
   }
 
-    .logo img{
-    height:42px;
-  } 
-
+  /* logo más chico en móvil */
+  .logo img{
+    height:40px;
+  }
 }
