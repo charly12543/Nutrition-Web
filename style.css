@@ -34,6 +34,16 @@ nav{
   font-weight:bold;
   font-size:1.3rem;
   color:#22c55e;
+  display:flex;
+  align-items:center;
+}
+
+/* FIX: tamaño correcto del logo */
+.logo img{
+  height:50px;
+  width:auto;
+  display:block;
+  object-fit:contain;
 }
 
 .nav-links{
@@ -252,5 +262,9 @@ footer{
   .nav-links.show{
     display:flex;
   }
+
+    .logo img{
+    height:42px;
+  } 
 
 }
