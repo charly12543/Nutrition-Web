@@ -633,7 +633,28 @@ section{
   font-size:.75rem;
   opacity:.6;
 }
+/* ===== MEJORA REDES SOCIALES ===== */
+.social-title{
+  width:100%;
+  text-align:center;
+  font-size:1rem;
+  opacity:.8;
+  margin-bottom:10px;
+  letter-spacing:.5px;
+}
 
+.btn-social{
+  min-width:140px;
+  text-align:center;
+  font-weight:600;
+  letter-spacing:.3px;
+  transition:.25s ease;
+}
+
+/* efecto más premium */
+.btn-social:hover{
+  transform:translateY(-3px) scale(1.05);
+}
    
 }
 
