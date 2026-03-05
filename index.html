@@ -238,7 +238,7 @@ Resultados documentados en consulta real, sin filtros ni Photoshop.
   <div class="container">
     <h2 class="section-title">Lo que dicen los pacientes</h2>
 
-    <div class="testimonials">
+      <div class="testimonials-slider">
 
       <div class="testimonial">
         <p>"Gracias a ti he bajado 10 kilos en 8 semanas, saludos desde Tijuana."</p>
@@ -535,6 +535,24 @@ startCounters();
 });
 observer.observe(document.querySelector('#autoridad'));
 </script>  
- 
+
+ <!-- =========== TESTIMONIOS SLIDER ========== -->
+ <script>
+let index = 0;
+const testimonials = document.querySelectorAll(".testimonial");
+function showTestimonial(){
+testimonials.forEach((t,i)=>{
+t.style.transform = `translateX(-${index * 100}%)`;
+});
+index++;
+if(index >= testimonials.length){
+index = 0;
+}
+}
+setInterval(showTestimonial,4000);
+</script>
+
+
+  
 </body>
 </html>
