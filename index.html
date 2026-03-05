@@ -327,13 +327,11 @@ Más que un plan de alimentación, ofrezco un acompañamiento estratégico enfoc
   <section id="imc">
 <div class="container">
 <h2 class="section-title">Calcula tu Índice de Masa Corporal</h2>
-
 <div class="imc-box">
 <div class="imc-inputs">
-
-<input type="number" id="peso" placeholder="Peso en kg">
-
-<input type="number" id="altura" placeholder="Altura en cm">
+  
+<input type="number" id="peso" placeholder="Peso en kg" step="0.1">
+<input type="number" id="altura" placeholder="Altura en cm" step="0.1">  
 
 <button onclick="calcularIMC()" class="btn-primary">
 Calcular IMC
@@ -531,11 +529,8 @@ color = "#ef4444";
 }
 
 document.getElementById("resultado").innerHTML =
-"<span style='color:"+color+"'>Tu IMC es <b>" + imc + "</b> (" + mensaje + ")</span>";
-
-<p class="imc-mini">
-*El IMC es una referencia general. La composición corporal real se evalúa en consulta.*
-</p>  
+"<span style='color:"+color+"'>Tu IMC es <b>" + imc + "</b> (" + mensaje + ")</span>" +
+"<p class='imc-mini'>*El IMC es una referencia general. La composición corporal real se evalúa en consulta.*</p>";  
 }
 </script>
 
