@@ -101,17 +101,17 @@
     <div class="authority-grid reveal">
 
       <div class="badge">
-        <h3>+100 Transformaciones</h3>
+        <h3><span class="counter" data-target="100">0</span>+ Transformaciones</h3>
         <p>Clientes satisfechos que cambiaron su físico</p>
       </div>
 
       <div class="badge">
-        <h3>Especialista en recomposición corporal</h3>
+        <h3><span class="counter" data-target="5">0</span>+ Años de experiencia</h3>
         <p>Planes adaptados a cada cuerpo y objetivo</p>
       </div>
 
       <div class="badge">
-        <h3>Nutrición deportiva avanzada</h3>
+        <h3><span class="counter" data-target="300">0</span>+ Pacientes asesorados</h3>
         <p>Mejora fuerza, rendimiento y recuperación</p>
       </div>
 
@@ -173,6 +173,20 @@ Resultados documentados en consulta real, sin filtros ni Photoshop.
 </p>
     <div class="transform-grid">
 
+<!--------------------------------------------------------- PRUEBA IMAGENES --------------------------------------------------------->
+      <!-- SLIDER ANTES / DESPUÉS -->
+<!--<div class="before-after reveal">
+<div class="ba-container">
+<img src="image/antes.jpg" class="ba-img">
+<div class="ba-overlay">
+<img src="image/despues.jpg">
+</div>
+<input type="range" min="0" max="100" value="50" class="ba-slider">
+</div>
+<p class="ba-text">Desliza para ver la transformación</p>
+</div>------->
+
+    
       <!-- Caso 1 -->
       <div class="transform-card reveal">
         <img src="image/foto001.jpg" alt="Antes transformación corporal" loading="lazy">
@@ -492,6 +506,35 @@ document.getElementById("resultado").innerHTML =
 </p>  
 }
 </script>
+
+<script>
+const counters = document.querySelectorAll('.counter');
+const startCounters = () => {
+counters.forEach(counter => {
+const target = +counter.getAttribute('data-target');
+let count = 0;
+const updateCounter = () => {
+const increment = target / 120;
+if(count < target){
+count += increment;
+counter.innerText = Math.floor(count);
+setTimeout(updateCounter,15);
+}else{
+counter.innerText = target;
+}
+};
+updateCounter();
+});
+};
+const observer = new IntersectionObserver(entries => {
+entries.forEach(entry => {
+if(entry.isIntersecting){
+startCounters();
+}
+});
+});
+observer.observe(document.querySelector('#autoridad'));
+</script>  
  
 </body>
 </html>
