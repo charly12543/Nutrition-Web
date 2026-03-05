@@ -301,11 +301,9 @@ Más que un plan de alimentación, ofrezco un acompañamiento estratégico enfoc
 <!-- ================= CALCULADORA ================= -->
   <section id="imc">
 <div class="container">
-
 <h2 class="section-title">Calcula tu Índice de Masa Corporal</h2>
 
 <div class="imc-box">
-
 <div class="imc-inputs">
 
 <input type="number" id="peso" placeholder="Peso en kg">
@@ -317,19 +315,13 @@ Calcular IMC
 </button>
 
 </div>
-
 <div class="imc-result">
-
 <p id="resultado">Tu resultado aparecerá aquí</p>
-
 <a href="https://wa.me/527345246507" class="btn-cta">
 Quiero mejorar mi resultado
 </a>
-
 </div>
-
 </div>
-
 </div>
 </section>
   
@@ -466,20 +458,31 @@ altura = altura / 100;
 let imc = peso / (altura * altura);
 imc = imc.toFixed(1);
 let mensaje = "";
+let color = "";
+
 if(imc < 18.5){
 mensaje = "Bajo peso";
+color = "#3b82f6";
 }
-else if(imc < 24.9){
+else if(imc < 25){
 mensaje = "Peso saludable";
+color = "#22c55e";
 }
-else if(imc < 29.9){
+else if(imc < 30){
 mensaje = "Sobrepeso";
+color = "#f59e0b";
 }
 else{
 mensaje = "Obesidad";
+color = "#ef4444";
 }
+
 document.getElementById("resultado").innerHTML =
-"Tu IMC es <b>" + imc + "</b> (" + mensaje + ")";
+"<span style='color:"+color+"'>Tu IMC es <b>" + imc + "</b> (" + mensaje + ")</span>";
+
+<p class="imc-mini">
+*El IMC es una referencia general. La composición corporal real se evalúa en consulta.*
+</p>  
 }
 </script>
  
