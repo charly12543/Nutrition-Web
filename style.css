@@ -508,6 +508,16 @@ border:none;
   color:#fff;
 }
 
+/* ================= TIKTOK ================= */
+
+.btn-social.tiktok{
+background:#000;
+}
+.btn-social.tiktok:hover{
+background:#111;
+transform:translateY(-3px);
+}
+
 .instagram{ background:#E1306C; }
 .facebook{ background:#1877F2; }
 
