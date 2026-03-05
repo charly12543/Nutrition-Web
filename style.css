@@ -378,6 +378,33 @@ section{
   font-size:.85rem;
   opacity:.7;
 }
+/* ================= TESTIMONIOS SLIDER ================= */
+
+.testimonials-slider{
+display:flex;
+overflow:hidden;
+position:relative;
+max-width:900px;
+margin:auto;
+}
+
+.testimonial{
+min-width:100%;
+transition:transform .6s ease;
+text-align:center;
+padding:30px;
+}
+
+.testimonial p{
+font-size:1.1rem;
+line-height:1.6;
+margin-bottom:15px;
+}
+
+.testimonial span{
+font-weight:600;
+color:#22c55e;
+}
 
 /* ===================================
    SOBRE MI
