@@ -282,7 +282,42 @@ Más que un plan de alimentación, ofrezco un acompañamiento estratégico enfoc
 
   </div>
 </section>
+  
+<!-- ================= CALCULADORA ================= -->
+  <section id="imc">
+<div class="container">
 
+<h2 class="section-title">Calcula tu Índice de Masa Corporal</h2>
+
+<div class="imc-box">
+
+<div class="imc-inputs">
+
+<input type="number" id="peso" placeholder="Peso en kg">
+
+<input type="number" id="altura" placeholder="Altura en cm">
+
+<button onclick="calcularIMC()" class="btn-primary">
+Calcular IMC
+</button>
+
+</div>
+
+<div class="imc-result">
+
+<p id="resultado">Tu resultado aparecerá aquí</p>
+
+<a href="https://wa.me/52XXXXXXXXXX" class="btn-cta">
+Quiero mejorar mi resultado
+</a>
+
+</div>
+
+</div>
+
+</div>
+</section>
+  
 <!-- ================= CTA FINAL ================= -->
 <section class="section">
   <div class="container">
@@ -402,6 +437,39 @@ window.addEventListener("scroll", () => {
 });
 </script>
 
+  <!-- ================= CALCULADORA JS ================= -->
+<script>
+
+function calcularIMC(){
+
+let peso = document.getElementById("peso").value;
+let altura = document.getElementById("altura").value / 100;
+
+let imc = peso / (altura * altura);
+
+imc = imc.toFixed(1);
+
+let mensaje = "";
+
+if(imc < 18.5){
+mensaje = "Bajo peso";
+}
+else if(imc < 24.9){
+mensaje = "Peso saludable";
+}
+else if(imc < 29.9){
+mensaje = "Sobrepeso";
+}
+else{
+mensaje = "Obesidad";
+}
+
+document.getElementById("resultado").innerHTML =
+"Tu IMC es <b>" + imc + "</b> (" + mensaje + ")";
+
+}
+
+</script>
  
 </body>
 </html>
