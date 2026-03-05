@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://charly12543.github.io/Nutrition-Web/sitemap.xml
