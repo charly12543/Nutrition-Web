@@ -602,6 +602,15 @@ border:none;
   transform:translateY(-3px) scale(1.05);
   box-shadow:0 10px 25px rgba(255,0,80,.6);
 }
+
+.social-footer{
+  text-align:center;
+  margin:30px 0;
+  display:flex;
+  justify-content:center;
+  gap:18px;
+  flex-wrap:wrap;
+}
 /* ===================================
    REDES SUPERIORES
 ===================================*/
