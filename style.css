@@ -328,12 +328,12 @@ font-weight:600;
 background:#16a34a;
 }
 
-.carousel-suplementos{
-  display:flex;
-  gap:25px;
-  overflow-x:auto;
-  scroll-behavior:smooth;
-  padding:20px 0;
+.carousel-suplementos {
+  display: flex;
+  gap: 25px;
+  overflow-x: hidden;       /* ocultar scroll manual */
+  padding: 20px 0;
+  animation: auto-scroll 30s linear infinite;
 }
 
 .carousel-suplementos img{
@@ -349,9 +349,19 @@ background:#16a34a;
   transform:scale(1.08);
 }
 
-.carousel-suplementos .suplemento-card{
-  flex: 0 0 auto;
+.carousel-suplementos .suplemento-card {
+  flex: 0 0 auto;           /* que no se contraiga */
   width: 320px;
+}
+
+/* animación para mover carrusel */
+@keyframes auto-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 /* ================= lightbox ================= */
