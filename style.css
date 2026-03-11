@@ -289,13 +289,6 @@ border-color:#22c55e;
    SUPLEMENTOS
 ===================================*/
 
-.suplementos-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:30px;
-margin-top:40px;
-}
-
 .suplemento-card{
 background:#020617;
 border-radius:14px;
@@ -344,8 +337,8 @@ background:#16a34a;
 }
 
 .carousel-suplementos img{
-  height:300px;
-  min-width:280px;
+  height:360px;
+  min-width:320px;
   object-fit:cover;
   border-radius:14px;
   cursor:pointer;
@@ -354,6 +347,11 @@ background:#16a34a;
 
 .carousel-suplementos img:hover{
   transform:scale(1.08);
+}
+
+.carousel-suplementos .suplemento-card{
+  flex: 0 0 auto;
+  width: 320px;
 }
 
 /* ================= lightbox ================= */
