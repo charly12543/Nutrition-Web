@@ -289,26 +289,46 @@ border-color:#22c55e;
    SUPLEMENTOS
 ===================================*/
 
-.suplementos{
-background:#020617;
+.suplementos-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+margin-top:40px;
 }
 
-.suplementos .services{
-margin-top:30px;
-}
-
-.suplementos .card{
+.suplemento-card{
+background:#fff;
+border-radius:14px;
+padding:20px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
 text-align:center;
+transition:.3s;
 }
 
-.suplementos .card p{
-font-size:.95rem;
-margin-bottom:10px;
-}
-
-.suplementos .card:hover{
+.suplemento-card:hover{
 transform:translateY(-8px);
-border-color:#22c55e;
+box-shadow:0 15px 30px rgba(0,0,0,0.15);
+}
+
+.suplemento-card img{
+width:100%;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+.btn-supl{
+display:inline-block;
+margin-top:15px;
+padding:10px 18px;
+background:#22c55e;
+color:white;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+}
+
+.btn-supl:hover{
+background:#16a34a;
 }
 /* ===================================
    VIDEO NUTRIÓLOGO PREMIUM
