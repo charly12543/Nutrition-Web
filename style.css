@@ -329,29 +329,27 @@ font-weight:600;
 background:#16a34a;
 }
 
-/* ================= AUTO SCROLL SUPLEMENTOS ================= */
+/* ================= AUTO SCROLL SUPLEMENTOS MEJORADO ================= */
 .carousel-suplementos {
   display: flex;
   gap: 25px;
-  overflow-x: hidden;
+  overflow: hidden;
   padding: 20px 0;
-
   /* animación automática suave */
   animation: scroll-cards 35s linear infinite;
+  will-change: transform;
 }
 
 /* cards adaptables */
 .carousel-suplementos .suplemento-card {
   flex: 0 0 auto;
-  min-width: 340px;   /* mayor ancho para evitar recorte de texto */
-  max-width: 380px;   /* límite para no crecer demasiado */
-}
-
-.carousel-suplementos .suplemento-card {
+  min-width: 300px;   /* ancho mínimo para pantallas pequeñas */
+  max-width: 340px;   /* límite para no crecer demasiado */
   padding: 25px;
   border-radius: 15px;
 }
 
+/* esconder scrollbars */
 .carousel-suplementos::-webkit-scrollbar {
   display: none;
 }
@@ -360,13 +358,21 @@ background:#16a34a;
   scrollbar-width: none;
 }
 
-/* animación (suave y continua) */
+/* animación continua e infinita */
 @keyframes scroll-cards {
   0% {
     transform: translateX(0);
   }
   100% {
     transform: translateX(-50%);
+  }
+}
+
+/* RESPONSIVE: que cards no se corten en móvil */
+@media (max-width: 768px) {
+  .carousel-suplementos .suplemento-card {
+    min-width: 260px;
+    max-width: 280px;
   }
 }
 
