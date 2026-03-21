@@ -931,36 +931,45 @@ align-items:center;
 }
 }
 
-
-
+/* ===================================
+   SEO 
+===================================*/
 .seo-section{
-  background:#020617;
+  background: radial-gradient(circle at center, #020617, #020617);
+  text-align:center;
 }
-
+.seo-intro{
+  max-width:700px;
+  margin: 0 auto 40px;
+  font-size:1.05rem;
+  color:#cbd5f5;
+}
 .seo-grid{
   display:flex;
   gap:25px;
   flex-wrap:wrap;
   justify-content:center;
 }
-
 .seo-card{
-  background:#0f172a;
-  padding:25px;
-  border-radius:16px;
+  background: linear-gradient(145deg,#020617,#0f172a);
+  padding:30px;
+  border-radius:18px;
   max-width:400px;
   border:1px solid rgba(255,255,255,0.05);
-  transition:.3s ease;
+  transition:.35s ease;
+  text-align:left;
 }
-
 .seo-card:hover{
-  transform:translateY(-6px);
+  transform:translateY(-8px) scale(1.02);
   border-color:#22c55e;
+  box-shadow:0 20px 40px rgba(0,0,0,.6);
 }
-
 .seo-card h3{
   color:#22c55e;
   margin-bottom:10px;
+}
+.seo-cta{
+  margin-top:40px;
 }
 
 
