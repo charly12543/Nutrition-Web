@@ -336,7 +336,7 @@ background:#16a34a;
   overflow: hidden;
   padding: 20px 0;
   /* animación automática suave */
-  animation: scroll-cards 35s linear infinite;
+   animation: scroll-cards 50s linear infinite;
   will-change: transform;
 }
 
@@ -567,6 +567,10 @@ color:#22c55e;
 /* ===================================
    SOBRE MI
 ===================================*/
+img{
+  max-width:100%;
+  height:auto;
+}
 .about{
   display:grid;
   grid-template-columns:1fr 1fr;
@@ -920,4 +924,11 @@ grid-template-columns:1fr;
 flex-direction:column;
 align-items:center;
 }
+
+@media(max-width:768px){
+.hero{
+  padding:20px;
+}
+}
+   
 }
