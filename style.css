@@ -930,5 +930,40 @@ align-items:center;
   padding:20px;
 }
 }
+
+
+
+.seo-section{
+  background:#020617;
+}
+
+.seo-grid{
+  display:flex;
+  gap:25px;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.seo-card{
+  background:#0f172a;
+  padding:25px;
+  border-radius:16px;
+  max-width:400px;
+  border:1px solid rgba(255,255,255,0.05);
+  transition:.3s ease;
+}
+
+.seo-card:hover{
+  transform:translateY(-6px);
+  border-color:#22c55e;
+}
+
+.seo-card h3{
+  color:#22c55e;
+  margin-bottom:10px;
+}
+
+
+   
    
 }
