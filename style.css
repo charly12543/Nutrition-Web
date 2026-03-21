@@ -934,9 +934,10 @@ align-items:center;
 /* ===================================
    SEO 
 ===================================*/
-.seo-section{
-  background: radial-gradient(circle at center, #020617, #020617);
-  text-align:center;
+.seo-section .container{
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
 }
 .seo-intro{
   max-width:700px;
@@ -949,6 +950,7 @@ align-items:center;
   gap:25px;
   flex-wrap:wrap;
   justify-content:center;
+  align-items:stretch;
 }
 .seo-card{
   background: linear-gradient(145deg,#020617,#0f172a);
@@ -957,7 +959,7 @@ align-items:center;
   max-width:400px;
   border:1px solid rgba(255,255,255,0.05);
   transition:.35s ease;
-  text-align:left;
+  text-align:center;
 }
 .seo-card:hover{
   transform:translateY(-8px) scale(1.02);
@@ -971,7 +973,13 @@ align-items:center;
 .seo-cta{
   margin-top:40px;
 }
-
+.seo-section h2{
+  max-width:700px;
+  margin:0 auto 20px;
+}
+.seo-intro{
+  text-align:center;
+}
 
    
    
